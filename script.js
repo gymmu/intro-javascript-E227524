@@ -1,5 +1,5 @@
 function sayHello() {
-  alert("Hello World!")
+  alert("Memet abi lässt Grüssen!")
 }
 
 function changeBackground() {
@@ -8,7 +8,7 @@ function changeBackground() {
 }
 function deleteText() {
   const elemToDeleteText = document.querySelector("#to-delete")
-  elemToDeleteText.textContent = "Inhalt gelöscht"
+  elemToDeleteText.textContent = "to-delete"
 }
 function incrementCounter() {
   const numberElement = document.querySelector("#counter")
@@ -22,3 +22,15 @@ function decrementCounter() {
   num = num - 1
   numberElement.textContent = num
 }
+function resetCounter() {
+  const numberElement = document.querySelector("#counter")
+  let num = parseInt(numberElement.textContent)
+  num = num =0
+  numberElement.textContent = num
+}
+  function amnt() {
+    const numberElement = document.querySelector("#counter")
+    let num = parseInt(numberElement.textContent)
+    num = num =-1000000000000000000
+    numberElement.textContent = num
+  }
